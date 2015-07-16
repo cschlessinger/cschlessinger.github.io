@@ -1,0 +1,78 @@
+main {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+
+}
+h2 {
+
+}
+h3 {
+
+}
+p {
+
+}
+ul {
+
+}
+li {
+
+}
+a {
+
+}
+header {
+	display: block;
+}
+footer {
+	display: block;
+}
+section {
+	padding: 1em;
+}
+nav ul {
+	list-style: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+nav li {
+	float: left;
+	width: 16%;
+}
+nav a {
+	display: block;
+	text-decoration: none;
+}
+#pageHeader h1 {
+	font-family: 'Architects Daughter', cursive;
+	font-size: 64px;
+}
+#pageHeader h3 {
+	font-family: 'Architects Daughter', cursive;
+	font-size: 24px;
+}
+#pageHeader {
+	text-align: center;
+}
+#whyMe {
+	background-color: #57AEBE;
+	margin-top: 50px;
+}
+#portfolio {
+	background-color: #97BE47;
+}
+#blog {
+	background-color: #F4C435;
+}
+#resume {
+	background-color: #F04442;
+}
+#aboutMe {
+	background-color: #2D3F4B;
+	color: white;
+}
+#recommendations {
+	background-color: #76448C;
+}
