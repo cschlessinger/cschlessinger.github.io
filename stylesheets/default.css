@@ -1,0 +1,194 @@
+body {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+
+}
+h2 {
+
+}
+h3 {
+
+}
+p {
+	font-size: 1.1em;
+}
+ul {
+
+}
+li {
+
+}
+a {
+	color: inherit;
+}
+header {
+	display: block;
+	text-align: center;
+}
+section {
+	padding: 1em 5em;
+	margin-left: 7em;
+	margin-right: 7em;
+	clear: both;
+}
+nav {
+	margin: 0 auto 1em auto;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	width: 82%;
+	position: relative;
+	display: block;
+	z-index: 100;
+	border: 3px solid black;
+	color: black;
+	text-align: center;
+}
+footer ul,
+nav ul {
+	list-style: none;
+	display: inherit;
+	height: 1em;
+}
+footer li, nav li {
+	width: 16%;
+	display: inline;
+	float: left;
+}
+footer a, nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+}
+nav li a:hover {
+	text-decoration: underline;
+}
+div > a {
+	text-decoration: none;
+	color: inherit;
+}
+div > a:hover {
+	color: white;
+}
+footer {
+	margin: 2em auto 0 auto;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	width: 82%;
+	height: 2em;
+	position: relative;
+	display: block;
+	z-index: 100;
+	color: black;
+	text-align: center;
+	bottom: 1em;
+}
+footer img {
+	height: 2em;
+}
+#pageHeader h1 {
+	font-size: 4em;
+}
+#pageHeader h3 {
+	font-size: 1.5em;
+}
+.purple {
+	background-color: #B2ABF2;
+}
+.red {
+	background-color: #FF6666;
+}
+.yellow {
+	background-color: #E7ED49;
+}
+.green {
+	background-color: #9de24f;
+}
+.blue {
+	background-color: #87CEFA;
+}
+.orange {
+	background-color: #FFBD55;
+}
+.scrollBoxesRight {
+  height: 30%;
+  width: 7%;
+  right: 1%;
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  font-size: 6em;
+}
+.scrollBoxesLeft {
+  height: 30%;
+  width: 7%;
+  left: 1%;
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  font-size: 6em;
+}
+.nextWhyMe {
+	border: 3px solid #B2ABF2;
+	color: #B2ABF2;
+}
+div.nextWhyMe:hover {
+	background-color: #B2ABF2;
+	color: white;
+}
+.nextPortfolio {
+	border: 3px solid #FF6666;
+	color: #FF6666;
+}
+div.nextPortfolio:hover {
+	background-color: #FF6666;
+	color: white;
+}
+.nextBlog {
+	border: 3px solid #E7ED49;
+	color: #E7ED49;
+}
+div.nextBlog:hover {
+	background-color: #E7ED49;
+	color: white;
+}
+.nextResume {
+	border: 3px solid #9de24f;
+	color: #9de24f;
+}
+div.nextResume:hover {
+	background-color: #9de24f;
+	color: white;
+}
+.nextAboutMe {
+	border: 3px solid #87CEFA;
+	color: #87CEFA;
+}
+div.nextAboutMe:hover {
+	background-color: #87CEFA;
+	color: white;
+}
+.nextRecommendations {
+	border: 3px solid #FFBD55;
+	color: #FFBD55;
+}
+div.nextRecommendations:hover {
+	background-color: #FFBD55;
+	color: white;
+}
+.columnLeft {
+	width: 50%;
+	float: left;
+}
+.columnRight {
+	width:50%;
+	float:right;
+}
+div.columnLeft ul li:first-child, div.columnRight ul li:first-child {
+	margin-left: -2em;
+	list-style: none;
+}
+div.columnLeft li, div.columnRight li {
+	padding-bottom: 1em;
+}
