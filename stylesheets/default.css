@@ -179,10 +179,12 @@ div.nextRecommendations:hover {
 }
 .columnLeft {
 	width: 49%;
+	position: absolute;
 	display: inline-block;
 }
 .columnRight {
-	width:49.5%;
+	width:49%;
+	position: absolute;
 	display: inline-block;
 }
 div.columnLeft ul li:first-child, div.columnRight ul li:first-child {
