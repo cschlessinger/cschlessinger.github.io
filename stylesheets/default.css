@@ -178,12 +178,12 @@ div.nextRecommendations:hover {
 	color: white;
 }
 .columnLeft {
-	width: 50%;
-	float: left;
+	width: 49%;
+	display: inline-block;
 }
 .columnRight {
-	width:50%;
-	float:right;
+	width:49.5%;
+	display: inline-block;
 }
 div.columnLeft ul li:first-child, div.columnRight ul li:first-child {
 	margin-left: -2em;
