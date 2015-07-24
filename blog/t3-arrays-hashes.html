@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+  <title>Claire @ DBC - week 3</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700|Josefin+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body class="green">
+<main>
+  <header>
+    <h1>Lists, Lists, Lists: All About Arrays and Hashes</h1>
+    <h2>No, this has nothing to do with what's trending on Twitter; hashes are their own kind of awesome</h2>
+    <h4>July 24, 2015</h4>
+  </header>
+  <section>
+    <p>I'll let you in on a little secret: websites are really just a bunch of data. If you think about it, what is Twitter? Well, it's tweets, which are comprised of text, and users, who have a username, and your profile picture and description... it's a lot to keep track of, though. How do they make sure that when someone clicks on your username, they get your profile? They're stored together! Now, I won't pretend to really know how Twitter works, but if I as a n00b were starting out, I would want to keep things in nice, neat little pairs. Enter arrays and hashes!</p>
+    <p>Let's start with the similarities: they both collect things (<i>objects</i>) in lists. They both accept strings, integers, floats, and booleans. You can access their innards using bracket notation, where you put the name of the hash or array followed by brackets populated with the identifier that you want to use to identify the content you want. Hm... that last part is confusing. Perhaps because arrays and hashes <i>do</i> actually do different things. So let's talk about that!</p>
+    <p><h5>Arrays</h5></p>
+    <p>Arrays are lists where everything is kept in a nice, neat order and assigned a number to keep track of its position, or index. This is pretty nifty, although it's important to keep in mind that indexing in computer-land works differently than how humans in everyday life do it. Counting starts at 0, so the first oject in an array is in the zeroth position. So say I wanted to make a list of all my favorite things. It would look something like this:</p>
+    <code>favorite_things = ["pugs", 9, "chocolate", "lilacs", true, "DBC"]</code>
+    <p>I can get all sorts of information about my array by writing things like <code>favorite_things.length</code> (6) or <code>favorite_things[2]</code> (chocolate). So much great information!</p>
+    <p>But sometimes your lists aren't just lists of random things. Sometimes they're pairs of information that all make up a collection of information, and you want to name them rather than remembering where they fall in the order. Let's do hashes!</p>
+    <p><h5>Hashes</h5></p>
+    <p>Hashes are like a dictionary: there's a word, and then there's all the information about the word. If you want to know more about the word "supercalifragilisticexpialidocious," you can look up that word and see the corresponding entry (fun fact: it was popularized by the 1964 film <i>Mary Poppins</i>!)</p>
+    <p>These are super useful for things like addresses, user information, a list of students' grades, a library catalog, and the list goes on. If I were to make a hash about myself (sense a theme?), it could go something like this:</p>
+    <p><code>all_about_me = {"name" => "Claire Elizabeth Schlessinger",
+    "age" => 24,
+    "favorite_color" => "orange",
+    "pet_peeve" => "small talk",
+    "speaks_french" => true
+    }</code></p>
+    <p>Note that the formatting is somewhat different here: we use curly braces rather than square brackets and put the name of the key before a colon before the value. But otherwise, they both start with a name, lead with an equals sign, and separate values with punctuation. If I wanted to find out something about myself, say, my favorite color, I could write: <code>puts all_about_me["favorite_color"]</code> and get back <code>"orange"</code>.</p>
+  </section>
+</main>
+</body>
