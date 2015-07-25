@@ -32,7 +32,8 @@ section {
 	margin-left: 7em;
 	margin-right: 7em;
 	clear: both;
-	height:auto;
+	height:auto !important;
+	overflow: auto;
 }
 nav {
 	margin: 0 auto 1em auto;
