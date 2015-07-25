@@ -27,6 +27,9 @@ header {
 	display: block;
 	text-align: center;
 }
+header a {
+	text-transform: none;
+}
 section {
 	padding: 1em 5em;
 	margin-left: 7em;
