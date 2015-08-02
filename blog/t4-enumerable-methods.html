@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <title>Claire @ DBC - week 4</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700|Josefin+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body class="blue">
+<main>
+  <header>
+    <a href="http://cschlessinger.github.io"><h1>Claire Schlessinger</h1></a>
+    <h1>The Map Method</h1>
+    <h2>Our friendly enumberable helper, the map method</h2>
+    <h4>August 2, 2015</h4>
+  </header>
+  <section>
+    <p>One of the basic tenets of coding is DRY — don't repeat yourself. Still, one of the major functions of coding is to manipulate large quantities of data, often running operations on lots of them at the same time.The map method runs on an object, such as an array, hash, or range, and executes your given code on each element of the method's receiver. The output is a new array (or, if you didn't put in a code block, just an enumerator).</p>
+    <p>Let's look at an example to help us understand this better. Let's say we have an array that contains a list of names. We want to capitalize each of the first letters of those names. This is what our code would look like:</p>
+    <code>["sammy", "alex", "jordan", "addison", "jamie", "taylor"].map {|name| name.capitalize} => ["Sammy", "Alex", "Jordan", "Addison", "Jamie", "Taylor"]</code>
+    <p>A few pointers: This actually works the same as the collect method; map is just more commonly used. If collect makes more sense to you, as it does to me, it might be helpful to use that for iterating through enumerators. You can also use the method on hashes, but remember to pass in two variable inputs to represent the keys and values.</p>
+  </section>
+</main>
+</body>
