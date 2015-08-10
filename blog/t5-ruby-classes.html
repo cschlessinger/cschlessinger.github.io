@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+  <title>Claire @ DBC - week 5</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700|Josefin+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body class="orange">
+<main>
+  <header>
+    <a href="http://cschlessinger.github.io"><h1>Claire Schlessinger</h1></a>
+    <h1>Pugs as Classes</h1>
+    <h2>Learning about Ruby classes with pugs</h2>
+    <h4>August 9, 2015</h4>
+  </header>
+  <section>
+    <p>Given that Ruby is an object-oriented language, it's important to understand how they relate to classes. Objects are the building blocks of everything we do in Ruby. We make them, we ask them for information, we give them information, and we generally fill them up with data to use. When we have similar objects that we want to have them same abilities and set of attributes, we can cluster them into a class and define them with a class blueprint. That way, we can make objects out of their class blueprints and have them come with a template of information.</p>
+    <p>This is maybe confusing, so let's call in some friendly pugs to help us break it down.</p>
+    <p>We start by defining it with its name, which is capitalized. This is important because Ruby expects classes to start with a capital letter. The first method we call initializes it and should include everything we need to start, such as arguments that need to be passed to each new instance of the class. If we want to use those arguments later on, which we surely will, we should save them as instance variables. Instance variables are similar in concept to local variables that we've been using elsewhere, but they're preceeded by an @ and are specific to the class you're in. That means even if I define an instance variable in my intialize method, I can call it in another method I define within the class.</p>
+    <p>This is a simple class definition for a pug:</p>
+    <pre><code>class Pug
+  def initialize(name, age)
+    @name = name
+    @age = age
+  end
+
+  def bark
+    puts "Woof woof"
+  end
+
+  def introduce
+    puts "Hi, my name is #{name} and I am #{age} years old."
+  end
+end</code></pre>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0GwrdzFlZ-A?start=3" frameborder="0" allowfullscreen></iframe>
+  <p>Now that we have a general template for pugs, we can create specific ones, such as Emmy, Charlie, and B.</p>
+  <pre><code>emmy = pug.new("Emmy", 13)
+charlie = pug.new("Charlie", 4)
+b = pug.new("B", 7)
+johnny = pug.new("Johnny", 1)</code></pre>
+  <p>Each of these dogs has some built-in methods. If we call</p>
+  <pre><code>emmy.bark</code></pre>
+  <p>the output is</p>
+  <code>"Woof woof"</code>
+  <p>and if we ask Charlie to introduce herself with</p>
+  <code>charlie.introduce</code>
+  <p>we get</p>
+  <code>"Hi, my name is Charlie and I am 4 years old."</code>
+  <p>Emmy, Charlie, and B all hope that helps you understand classes better!</p>
+  <img src="pug.gif"/>
+  </section>
+</main>
+</body>
