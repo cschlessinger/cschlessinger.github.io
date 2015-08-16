@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+  <title>Claire @ DBC - week 6</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700|Josefin+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body class="yellow">
+<main>
+  <header>
+    <a href="http://cschlessinger.github.io"><h1>Claire Schlessinger</h1></a>
+    <h1>Object-Oriented Design: Inheritance vs. Composition</h1>
+    <h2></h2>
+    <h4>August 15, 2015</h4>
+  </header>
+  <section>
+    <p>Last week, we talked about classes and how they worked. We defined some methods and used the class to initialize new instances of that class that all had access to the class's methods. This week, we're extending those concepts to talk about inheritance and compositon. These concepts allow us to reuse code in multiple places without copying and pasting over and over — in other words, keeping our code DRY.</p>
+    <p>Inheritance works by creating hierarchies of classes. Superclasses are for the broadest, most generic objects (for example, the Class object), and subclasses are for specifics. For example, you could have a Employee class with Developers and Project Managers subclasses. All employees would do things like arrive to work, write emails, attend meetings, so those methods could be defined in the Employee superclass. There are specific functions that developers are responsible for that project managers are not, and vice versa. We can define those responsibilities within the subclasses, while not needing to repeat the <i>everybody</i> methods in both of them. The inheritance gets set up in the class definition, like so: <code>class Developer < Employee</code></p>
+    <p>The downside to this is that these hierarchies might not hold true over time. Requirements may change, and while real-world taxonomies may be relatively immutable (a dog is always going to be a mammal), structures such as menus and lists and scroll bars are abstract enough that we can't predict one will always be a subclass of another. Inheritance operates under the "is-a" relationship model: A pug is a dog is a mammal is an animal. For the less rigid ideas we work with in programming, we might need a different approach...</p>
+    <p>Composition achieves the same end: giving one class access to the information contained within another class. It does this by using other classes within this class. We can create class A and class B, and when class B wants to use methods from within class A, it creates a new instance of class A that can then call its methods. This is called the "has-a" approach. This is what we've been using this week with the silverware/drawer and song/playlist approach since those things aren't parent-child relationships per se but rather a use-case scenario.</p>
+    <p>The downside to this is that it can end up doing the same thing as inheritance but with the added work of creating new objects and adding length and dependencies to the composed class.</p>
+    <p>Mixins are a bit above my pay grade at this point so I'll just touch on them briefly. Rather than limiting ourselves to classes, we can create a module that has the code we want to be able to reuse. Then, in any classes that need it, we would just write <code>include #{ModuleName}</code>. Then we have access to all of the module's methods. It's cleaner than composition and avoides the pitfalls of inheritance. Still, this seemingly positive attribute makes it a good candidate for overuse, so it's important, as always, to remember to use good design!</p>
+  </section>
+</main>
+</body>
