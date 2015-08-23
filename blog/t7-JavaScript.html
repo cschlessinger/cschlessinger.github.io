@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <title>Claire @ DBC - week 7</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700|Josefin+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body class="orange">
+<main>
+  <header>
+    <a href="http://cschlessinger.github.io"><h1>Claire Schlessinger</h1></a>
+    <h1>Code-Switching</h1>
+    <h2>Ruby to JavaScript and back with your head spinning</h2>
+    <h4>August 23, 2015</h4>
+  </header>
+  <section>
+    <p>There was a year in high school where I was taking three language classes simultaneously. I would duck out of French class and head to Spanish and the word "sol" would get stuck on my tongue and "soleil" would come out instead. The problem was they were <em>just</em> similar enough for me to mix them up. In fact, the languages are so similar that Ethnologue gives them a lexical similarity coefficient of .75. In French, we called it <em>faux amis</em> — false friends. It's both a blessing and a curse: going in to your second Romance language, you've already conquered concepts like the subjunctive, irregular verbs, second person plural, and the various verb tenses that no one really talks about in English class, like the pluperfect. But with the similarities being so, well, similar, you can forget which one belongs to which language and bring over habits between them.</p>
+    <p>And so it goes with Ruby and JavaScript. They're pretty similar; they both have arrays, strings, and booleans, both use indexing the same way, both use control flow. However, Ruby uses two equal signs to check for equality, whereas JavaScript uses three. Where Ruby encloses things with "end" statements, JavaScript litters its code with semicolons.  In Ruby, variables are just declared; in JS, they must be preceded with the keyword "var" to signify the variable declaration.</p>
+    <p>Let's talk about looping. As with many of the differences, Ruby can feel like it handles things more easily than JavaScript. I don't know how this holds up as a universal truth, but in terms of looping, it seems pretty accurate.</p>
+    <p>With Ruby, it's generally as simple as passing in an each statement and writing a block of code that does its thing. With JS, we create a for loop that first defines a variable, then sets the condition under which the loop continues to execute, then updates the state of the loop after each iteration. When we want to do things to all elements of an array, though, we end up writing for loops that look very similar: <code>for (var index = 0; index < array.length; index++)</code>. This grabs each element of the array, and then you can write code in the next line that does something(like <code>console.log(array[index])</code>). In Ruby, though, it would look like this: <code>array.each {|element| p element}</code>. And that's the whole thing! Isn't that so much nicer?</p>
+    <p>Still, this is a relatively simple example. The for construct provides lots of flexibility, and there are different types of loops in each language, like while and do. It's nice to have options and appreciate these languages for what makes them unique. Just try not to mix up your sols and soleils.</p>
+  </section>
+</main>
+</body>
