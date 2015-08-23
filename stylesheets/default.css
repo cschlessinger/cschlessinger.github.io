@@ -98,23 +98,23 @@ footer img {
 #pageHeader h3 {
 	font-size: 1.5em;
 }
+.teal {
+	background-color: #6ecdcf;
+}
+.pink {
+	background-color: #ebc2c2;
+}
 .purple {
-	background-color: #B2ABF2;
-}
-.red {
-	background-color: #FF6666;
-}
-.yellow {
-	background-color: #E7ED49;
+	background-color: #8190D5;
 }
 .green {
-	background-color: #9de24f;
-}
-.blue {
-	background-color: #87CEFA;
+	background-color: #85D691;
 }
 .orange {
-	background-color: #FFBD55;
+	background-color: #e8a65e;
+}
+.red {
+	background-color: #cb626d;
 }
 .scrollBoxesRight {
   height: 1.2em;
@@ -135,51 +135,51 @@ footer img {
   font-size: 6em;
 }
 .nextWhyMe {
-	border: 3px solid #B2ABF2;
-	color: #B2ABF2;
+	border: 3px solid #6ecdcf;
+	color: #6ecdcf;
 }
 div.nextWhyMe:hover {
-	background-color: #B2ABF2;
+	background-color: #6ecdcf;
 	color: white;
 }
 .nextPortfolio {
-	border: 3px solid #FF6666;
-	color: #FF6666;
+	border: 3px solid #ebc2c2;
+	color: #ebc2c2;
 }
 div.nextPortfolio:hover {
-	background-color: #FF6666;
+	background-color: #ebc2c2;
 	color: white;
 }
 .nextBlog {
-	border: 3px solid #E7ED49;
-	color: #E7ED49;
+	border: 3px solid #8190D5;
+	color: #8190D5;
 }
 div.nextBlog:hover {
-	background-color: #E7ED49;
+	background-color: #8190D5;
 	color: white;
 }
 .nextResume {
-	border: 3px solid #9de24f;
-	color: #9de24f;
+	border: 3px solid #85D691;
+	color: #85D691;
 }
 div.nextResume:hover {
-	background-color: #9de24f;
+	background-color: #85D691;
 	color: white;
 }
 .nextAboutMe {
-	border: 3px solid #87CEFA;
-	color: #87CEFA;
+	border: 3px solid #e8a65e;
+	color: #e8a65e;
 }
 div.nextAboutMe:hover {
-	background-color: #87CEFA;
+	background-color: #e8a65e;
 	color: white;
 }
 .nextRecommendations {
-	border: 3px solid #FFBD55;
-	color: #FFBD55;
+	border: 3px solid #cb626d;
+	color: #cb626d;
 }
 div.nextRecommendations:hover {
-	background-color: #FFBD55;
+	background-color: #cb626d;
 	color: white;
 }
 .columnLeft {
@@ -198,4 +198,14 @@ div.columnLeft ul li:first-child, div.columnRight ul li:first-child {
 }
 div.columnLeft li, div.columnRight li {
 	padding-bottom: 1em;
+}
+.project {
+	width: 33%;
+	height: 7em;
+	display: inline;
+	position: relative;
+}
+.project img {
+	max-width: 100%;
+	max-height: 100%;
 }
