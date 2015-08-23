@@ -207,8 +207,8 @@ div.columnLeft li, div.columnRight li {
 }
 .row {
 	padding-bottom: 1em;
-	display: flex;
-	justify-content: space-between;
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
 }
 .blog-post {
 	height: 3em;
