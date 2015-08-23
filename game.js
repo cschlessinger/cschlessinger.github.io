@@ -145,7 +145,7 @@
 // 		console.log("There was blood coming out of her eyes, blood coming out of her... wherever.");
 // 	}
 // 	else if (candidate === carly) {
-// 		console.log("Two weeks after 9/11, on September 26, 2001, Carly Fiorina gave a speech, \"Technology, Business and Our Way of Life: What's Next,\" in which she tied courage, leadership, heroes, and \"the questions of life and death\" to business leaders learning from one of the greatest civilizations to ever exist: Islamic civilization.");
+// 		console.log("Fresh off a victory and preparing for an appearance on KXTV in Sacramento Wednesday morning, California Republican Senate candidate Carly Fiorina was caught sharing a joke about Sen. Barbara Boxer's hairdo.");
 // 	}
 // };
 
@@ -241,13 +241,14 @@ function checkWinner() {
 		else
 			losers.push(candidates[i].name);
 	}
-	if (winner.length === 1)
-        console.log(winner + " won the election!")
-    	console.log(losers[0] + ", " + losers[1] + ", " + losers[2] + ", YOU'RE FIRED")
+	if (winner.length === 1) {
+        console.log(winner + " won the election!");
+    	console.log(losers[0] + ", " + losers[1] + ", " + losers[2] + ", YOU'RE FIRED");
+    }
     else {
         console.log("Oh no, a tie between " + winner[0] + " and " + winner[1]);
         tiebreaker(winner);
-        console.log(losers[0] + ", " + losers[1] + ", " + losers[2] + ", YOU'RE FIRED")
+        console.log(losers[0] + ", " + losers[1] + ", " + losers[2] + ", YOU'RE FIRED");
     }
 
 }
@@ -336,7 +337,7 @@ function gaffe(candidate) {
 		console.log("There was blood coming out of her eyes, blood coming out of her... wherever.");
 	}
 	else if (candidate === carly) {
-		console.log("Two weeks after 9/11, on September 26, 2001, Carly Fiorina gave a speech, \"Technology, Business and Our Way of Life: What's Next,\" in which she tied courage, leadership, heroes, and \"the questions of life and death\" to business leaders learning from one of the greatest civilizations to ever exist: Islamic civilization.");
+		console.log("Fresh off a victory and preparing for an appearance on KXTV in Sacramento Wednesday morning, California Republican Senate candidate Carly Fiorina was caught sharing a joke about Sen. Barbara Boxer's hairdo.");
 	}
 	console.log(candidate.name + " now has " + candidate.points + " point(s)");
 };
