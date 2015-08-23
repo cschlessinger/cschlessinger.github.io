@@ -184,8 +184,6 @@
 
 //create candidates
 
-//create candidates
-
 var candidates = []
 
 function Candidate(name, party, points, quote) {
@@ -232,6 +230,7 @@ function nextMonth() {
 
 function checkWinner() {
 	winner = []
+	losers = []
 	pointsArray = []
 	for (var i = 0; i < candidates.length; i++)
 		pointsArray.push(candidates[i].points)
@@ -239,13 +238,18 @@ function checkWinner() {
 	for (var i = 0; i < candidates.length; i++) {
 		if (candidates[i].points === highestPoints)
 			winner.push(candidates[i].name);
+		else
+			losers.push(candidates[i].name);
 	}
 	if (winner.length === 1)
         console.log(winner + " won the election!")
+    	console.log(losers[0] + ", " + losers[1] + ", " + losers[2] + ", YOU'RE FIRED")
     else {
         console.log("Oh no, a tie between " + winner[0] + " and " + winner[1]);
         tiebreaker(winner);
+        console.log(losers[0] + ", " + losers[1] + ", " + losers[2] + ", YOU'RE FIRED")
     }
+
 }
 
 
