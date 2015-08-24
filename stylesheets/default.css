@@ -1,5 +1,9 @@
 body {
 	font-family: 'Josefin Sans', sans-serif;
+	background-image: url(../orange.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 85% 8em;
 }
 
 h1 {
@@ -29,6 +33,9 @@ header {
 }
 header a {
 	text-decoration: none;
+}
+.bkg {
+	display:inline;
 }
 section {
 	padding: 1em 5em;
