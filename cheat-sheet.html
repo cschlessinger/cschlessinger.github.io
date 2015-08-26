@@ -1,0 +1,147 @@
+<DOCTYPE! html>
+    <html>
+        <head>
+            <title>The Definitive Glossary for All Things HTML</title>
+            <meta charset="UTF-8"/>
+            <link rel="stylesheet" type="text/css" href="cheat-sheet.css"/>
+        </head>
+    </html>
+    <body>
+        <header>The Definitive Glossary for All Things HTML</header>
+        <nav>
+            <div class="column">
+                <header><a href="#skeleton">The Skeleton of a page</a></header>
+                <div class="row"><a href="#doctype">Doctype</a> <a href="#html">HTML</a> <a href="#title">title</a></div>
+
+                <div class="row"><a href="#meta">meta</a> <a href="#link">link</a> <a href="#body">body</a></p></div>
+
+                <div class="row"><a href="#nav">nav</a> <a href="#header">header</a></div>
+                <div class="row"><a href="#title">main</a></div>
+                <div class="row"><a href="#title">footer</a></div>
+            </div>
+            <div class="columnRight">
+                <header><a href="#substance">The substance of a page</a></header>
+                <div class="row"><a href="#h1">h1-h6</a> <a href="#lists">lists (ul/ol and li)</a> <a href="#a">a</a></div>
+                <div class="row"><a href="#p">p</a> <a href="#br">br</a> <a href="#div">div</a></div>
+                <div class="row"><a href="#table">table</a> <a href="#img">img</a></div>
+            </div>
+        </nav>
+        <main>
+            <header><a NAME="skeleton">Skeleton</a></header>
+                <div class="item"><a NAME="doctype"><h4>Doctype</h4></a>
+                    <p>The doctype declaration must be the very first thing in your HTML document, before the html tag.</p>
+                    <p>The doctype declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in.</p>
+                    <p>HTML5 is not based on SGML, and therefore does not require a reference to a DTD.</p>
+                    <p>Tip: Always add the doctype declaration to your HTML documents, so that the browser knows what type of document to expect.</p>
+                </div>
+                <div class="item"><a NAME="html"><h4>HTML</h4></a>
+                    <p>This tag tells the browser that this is an HTML document.</p>
+                    <p>It represents the root of an HTML document.</p>
+                    <p>The html tag is the container for all other HTML elements (except for the doctype tag).</p>
+                </div>
+                <div class="item"><a NAME="title"><h4>title</h4></a>
+                    <p>The title tag is required in all HTML documents and it defines the title of the document.</p>
+                    <p>The title element:</p>
+                        <ul>
+                            <li>defines a title in the browser toolbar</li>
+                            <li>provides a title for the page when it is added to favorites</li>
+                            <li>displays a title for the page in search-engine results</li>
+                        </ul>
+                </div>
+                <div class="item"><a NAME="meta"><h4>meta</h4></a>
+                    <p>Metadata is data (information) about data.</p>
+                    <p>This tag provides metadata about the HTML document. Metadata will not be displayed on the page, but will be machine parsable.</p>
+                    <p>Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.</p>
+                    <p>The metadata can be used by browsers (how to display content or reload page), search engines (keywords), or other web services.</p>
+                </div>
+                <div class="item"><a NAME="link"><h4>link</h4></a>
+                    <p>The link tag defines a link between a document and an external resource.</p>
+                    <p>It is used to link to external style sheets.</p>
+                </div>
+                <div class="item"><a NAME="body"><h4>body</h4></a>
+                    <p>The body tag defines the document's body.</p>
+                    <p>The body element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc.</p>
+                </div>
+                <div class="item"><a NAME="nav"><h4>nav</h4></a>
+                    <p>The nav tag defines a set of navigation links.</p>
+                    <p>Notice that NOT all links of a document should be inside a nav element. The nav element is intended only for major block of navigation links.</p>
+                    <p>Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.</p>
+                </div>
+                <div class="item"><a NAME="header"><h4>header</h4></a>
+                    <p>The header element represents a container for introductory content or a set of navigational links.</p>
+                    <p>Such an element typically contains:</p>
+                    <ul>
+                        <li>one or more heading elements (h1 - h6)</li>
+                        <li>logo or icon</li>
+                        <li>authorship information</li>
+                    </ul>
+                    <p>You can have several header elements in one document.</p>
+                    <p>Note: A header tag cannot be placed within a footer, address, or another header element.</p>
+                </div>
+                <div class="item"><a NAME="main"><h4>main</h4></a>
+                    <p>The main tag specifies the main content of a document.</p>
+                    <p>The content inside the element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.</p>
+                    <p>Note: There must not be more than one main element in a document. The main element must NOT be a descendant of an article, aside, footer, header, or nav element.</p>
+                </div>
+                <div class="item"><a NAME="footer"><h4>footer</h4></a>
+                    <p>The footer tag defines a footer for a document or section.</p>
+                    <p>It should contain information about its containing element.</p>
+                    <p>A footer element typically contains:</p>
+                        <ul>
+                            <li>authorship information</li>
+                            <li>copyright information</li>
+                            <li>contact information</li>
+                            <li>sitemap</li>
+                            <li>back to top links</li>
+                            <li>related documents</li>
+                        </ul>
+                    <p>You can have several such elements in one document.</p>
+                </div>
+            <header><a NAME="substance">Substance</a></header>
+                <div class="item"><a NAME="h1"><h4>h1-h6</h4></a>
+                    <p>The h1 to h6 tags are used to define HTML headings.</p>
+                    <p>h1 defines the most important heading. h6 defines the least important heading.</p>
+                </div>
+                <div class="item"><a NAME="lists"><h4>lists (ul/ol and li)</h4></a>
+                    <p>The ol tag defines an ordered list. An ordered list can be numerical or alphabetical.</p>
+                    <p>The ul tag defines an unordered (bulleted) list.</p>
+                    <p>The li tag defines a list item. The li tag is used in ordered lists(ol) and unordered lists (ul).</p>
+                </div>
+                <div class="item"><a NAME="a"><h4>a</h4></a>
+                    <p>The a tag defines a hyperlink, which is used to link from one page to another.</p>
+                    <p>The most important attribute of the a element is the href attribute, which indicates the link's destination.</p>
+                    <p>By default, links will appear as follows in all browsers:</p>
+                    <ul>
+                        <li>An unvisited link is underlined and blue</li>
+                        <li>A visited link is underlined and purple</li>
+                        <li>An active link is underlined and red</li>
+                    </ul>
+                </div>
+                <div class="item"><a NAME="p"><h4>p</h4></a>
+                    <p>The p tag defines a paragraph.</p>
+                    <p>Browsers automatically add some space (margin) before and after each such element. The margins can be modified with CSS (with the margin properties).</p>
+                </div>
+                <div class="item"><a NAME="br"><h4>br</h4></a>
+                    <p>The br tag inserts a single line break.</p>
+                    <p>It is an empty tag which means that it has no end tag.</p>
+                </div>
+                <div class="item"><a NAME="div"><h4>div</h4></a>
+                    <p>The div tag defines a division or a section in an HTML document.</p>
+                    <p>It is used to group block-elements to format them with CSS.</p>
+                </div>
+                <div class="item"><a NAME="table"><h4>table</h4></a>
+                    <p>The table tag defines an HTML table.</p>
+                    <p>An HTML table consists of the table element and one or more tr, th, and td elements.</p>
+                    <p>The tr element defines a table row, the th element defines a table header, and the td element defines a table cell.</p>
+                    <p>A more complex HTML table may also include caption, col, colgroup, thead, tfoot, and tbody elements.</p>
+                </div>
+                <div class="item"><a NAME="img"><h4>img</h4></a>
+                    <p>The img tag defines an image in an HTML page.</p>
+                    <p>The <img> tag has two required attributes: src and alt.</p>
+                    <p>Note: Images are not technically inserted into an HTML page, images are linked to HTML pages. The img tag creates a holding space for the referenced image.</p>
+                    <p>Tip: To link an image to another document, simply nest the img tag inside a tags.</p>
+                </div>
+        </main>
+        <footer>
+        </footer>
+    </body>
