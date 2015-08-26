@@ -199,7 +199,7 @@ div.columnLeft li, div.columnRight li {
 .project {
 	width: 33%;
 	height: 7em;
-	display: inline;
+	display: inline-block;
 	position: relative;
 }
 .project img {
