@@ -201,6 +201,7 @@ div.columnLeft li, div.columnRight li {
 	height: 7em;
 	display: inline-block;
 	position: relative;
+	padding-bottom: 2em;
 }
 .project img {
 	max-width: 100%;
@@ -213,7 +214,7 @@ div.columnLeft li, div.columnRight li {
     font-style: italic;
 }
 .row {
-	padding-bottom: 1em;
+	padding-bottom: 2em;
 	display: -webkit-flex;
 	-webkit-justify-content: space-between;
 }
@@ -224,4 +225,22 @@ div.columnLeft li, div.columnRight li {
     display: inline-block;
     text-align: center;
     padding-top: 2em;
+}
+.blog-post:hover {
+	border-color: white;
+}
+.button-wrapper {
+	text-align: center;
+	position: relative;
+	width: 100%;
+}
+.button {
+	padding: 2em;
+	display: inline-block;
+	border: 2px solid black;
+	margin: 0px auto;
+}
+.button:hover {
+	border-color: white;
+	color: white;
 }
