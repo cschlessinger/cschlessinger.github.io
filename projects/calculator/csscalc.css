@@ -1,0 +1,69 @@
+body {
+	color: white;
+	-webkit-justify-content: center; /* Safari */
+  	justify-content: center;
+  	font-family: 'Titillium Web', sans-serif;
+  	align-items: center;
+}
+#calculator {
+	width: 25em;
+	border-radius: 10px;
+	background-color: #f39c12;
+	margin-top: 3em;
+	margin-left: 33%;
+	display: webkit-flex;  /*Safari*/
+	display: flex;
+	-webkit-flex-wrap: wrap; /*Safari*/
+	flex-wrap: wrap;
+	-webkit-justify-content: space-between; /* Safari */
+  	justify-content: center;
+  	align-items: center;
+}
+#screen {
+	width: 24em;
+    height: 5em;
+    margin: 0.5em auto;
+    border-radius: 10px;
+	background-color: #bdc3c7;
+	display: webkit-flex;  /*Safari*/
+	display: flex;
+	text-align: right;
+}
+#pad {
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.numButton {
+	width: 5em;
+	height: 5em;
+	border-radius: 10px;
+	background-color: #1abc9c;
+	display: webkit-flex;  /*Safari*/
+	display: flex;
+	-webkit-flex-direction: row; /*Safari*/
+	flex-direction: row;
+	-webkit-flex-wrap: wrap; /*Safari*/
+	flex-wrap: wrap;
+	-webkit-justify-content: center; /* Safari */
+  	justify-content: center;
+  	margin: .4em;
+  	align-items: center;
+}
+.funcButton {
+	width: 5em;
+	height: 5em;
+	border-radius: 10px;
+	background-color: #9b59b6;
+	display: webkit-flex;  /*Safari*/
+	display: flex;
+	-webkit-flex-direction: row; /*Safari*/
+	flex-direction: row;
+	-webkit-flex-wrap: wrap; /*Safari*/
+	flex-wrap: wrap;
+	-webkit-justify-content: center; /* Safari */
+  	justify-content: center;
+  	margin: .4em;
+  	align-items: center;
+}

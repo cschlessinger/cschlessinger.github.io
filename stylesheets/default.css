@@ -78,21 +78,40 @@ div > a {
 div > a:hover {
 	color: white;
 }
-footer {
-	margin: 2em auto 0 auto;
-	padding-top: .25em;
-	padding-bottom: .25em;
-	width: 82%;
-	height: 2em;
-	position: relative;
-	display: block;
-	z-index: 100;
-	color: black;
-	text-align: center;
-	bottom: 1em;
-}
 footer img {
 	height: 2em;
+}
+.footerNav {
+	position: fixed;
+    display: inline-flex;
+    flex-direction: column;
+    right: 2.7em;
+    top: 8em;
+}
+.dotNav {
+	position: fixed;
+    display: inline-flex;
+    flex-direction: column;
+    left: 2.7em;
+    top: 8em;
+}
+.dot {
+    display: flex;
+    justify-content: center;
+    align-self: stretch;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    margin-bottom: 2.5em;
+}
+.footerItem {
+	display: flex;
+    justify-content: center;
+    align-self: stretch;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    margin-bottom: 2.5em;
 }
 #color {
 	background-image: url(../orange.jpg);
@@ -123,72 +142,6 @@ footer img {
 }
 .red {
 	background-color: #cb626d;
-}
-.scrollBoxesRight {
-  height: 1.2em;
-  width: 7%;
-  right: 1%;
-  position: absolute;
-  display: inline-block;
-  text-align: center;
-  font-size: 6em;
-}
-.scrollBoxesLeft {
-  height: 1.2em;
-  width: 7%;
-  left: 1%;
-  position: absolute;
-  display: inline-block;
-  text-align: center;
-  font-size: 6em;
-}
-.nextWhyMe {
-	border: 3px solid #6ecdcf;
-	color: #6ecdcf;
-}
-div.nextWhyMe:hover {
-	background-color: #6ecdcf;
-	color: white;
-}
-.nextPortfolio {
-	border: 3px solid #ebc2c2;
-	color: #ebc2c2;
-}
-div.nextPortfolio:hover {
-	background-color: #ebc2c2;
-	color: white;
-}
-.nextBlog {
-	border: 3px solid #8190D5;
-	color: #8190D5;
-}
-div.nextBlog:hover {
-	background-color: #8190D5;
-	color: white;
-}
-.nextResume {
-	border: 3px solid #85D691;
-	color: #85D691;
-}
-div.nextResume:hover {
-	background-color: #85D691;
-	color: white;
-}
-.nextAboutMe {
-	border: 3px solid #e8a65e;
-	color: #e8a65e;
-}
-div.nextAboutMe:hover {
-	background-color: #e8a65e;
-	color: white;
-}
-.nextRecommendations {
-	border: 3px solid #cb626d;
-	color: #cb626d;
-}
-div.nextRecommendations:hover {
-	background-color: #cb626d;
-	color: white;
 }
 div.columnLeft ul li:first-child, div.columnRight ul li:first-child {
 	margin-left: -2em;
