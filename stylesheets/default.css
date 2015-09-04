@@ -12,6 +12,7 @@ h3 {
 }
 p {
 	font-size: 1.1em;
+	line-height: 1.3em;
 }
 ul {
 
@@ -33,32 +34,20 @@ header a {
 	display:inline;
 }
 section {
-	padding: 1em 5em;
-	margin-left: 7em;
-	margin-right: 7em;
+	padding: 1em 6em;
+	margin: 3em 7em;
 	clear: both;
 	height:auto !important;
 	overflow: auto;
+	mar
 }
-nav {
-	margin: 0 auto 1em auto;
-	padding-top: .25em;
-	padding-bottom: .25em;
-	width: 82%;
-	position: relative;
-	display: block;
-	z-index: 100;
-	border: 3px solid black;
-	color: black;
-	text-align: center;
-}
-footer ul,
+/*footer ul,
 nav ul {
 	list-style: none;
 	display: inherit;
 	height: 1em;
-}
-footer li, nav li {
+}*/
+/*footer li, nav li {
 	width: 16%;
 	display: inline;
 	float: left;
@@ -67,10 +56,7 @@ footer a, nav a {
 	display: inline-block;
 	text-decoration: none;
 	color: black;
-}
-nav li a:hover {
-	text-decoration: underline;
-}
+}*/
 div > a {
 	text-decoration: none;
 	color: inherit;
@@ -81,14 +67,14 @@ div > a:hover {
 footer img {
 	height: 2em;
 }
-.footerNav {
+#footerNav {
 	position: fixed;
     display: inline-flex;
     flex-direction: column;
     left: 2.7em;
     top: 8em;
 }
-.dotNav {
+#dotNav {
 	position: fixed;
     display: inline-flex;
     flex-direction: column;
@@ -104,7 +90,7 @@ footer img {
     border-radius: 50%;
     margin-bottom: 2.5em;
 }
-.dotNav a:hover::before {
+#dotNav a:hover::before {
 	display: flex;
 	content: attr(title);
   	padding: .8em;
@@ -135,8 +121,8 @@ footer img {
 #pageHeader h1 {
 	font-size: 4em;
 }
-#pageHeader h3 {
-	font-size: 1.5em;
+#pageHeader h2 {
+	font-size: 2em;
 }
 .teal {
 	background-color: #6ecdcf;
@@ -156,13 +142,6 @@ footer img {
 .red {
 	background-color: #cb626d;
 }
-div.columnLeft ul li:first-child, div.columnRight ul li:first-child {
-	margin-left: -2em;
-	list-style: none;
-}
-div.columnLeft li, div.columnRight li {
-	padding-bottom: 1em;
-}
 .project {
 	width: 33%;
 	height: 7em;
@@ -181,17 +160,22 @@ div.columnLeft li, div.columnRight li {
     font-style: italic;
 }
 .row {
-	padding-bottom: 2em;
-	display: -webkit-flex;
-	-webkit-justify-content: space-between;
+    display: inline-flex;
+    display: -webkit-flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
 }
 .blog-post {
-	height: 3em;
-    width: 6.5em;
+    height: 12em;
+    width: 12em;
     border: 2px solid black;
-    display: inline-block;
     text-align: center;
-    padding-top: 2em;
+    margin: 2em 0;
+    padding-top: 5em;
+    box-sizing: border-box;
 }
 .blog-post:hover {
 	border-color: white;
