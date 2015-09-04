@@ -41,22 +41,22 @@ section {
 	overflow: auto;
 	mar
 }
-/*footer ul,
-nav ul {
+footer ul {
 	list-style: none;
 	display: inherit;
 	height: 1em;
-}*/
-/*footer li, nav li {
+	margin-left: 9.7em;
+}
+footer li {
 	width: 16%;
 	display: inline;
 	float: left;
 }
-footer a, nav a {
+footer a {
 	display: inline-block;
 	text-decoration: none;
 	color: black;
-}*/
+}
 div > a {
 	text-decoration: none;
 	color: inherit;
@@ -67,12 +67,18 @@ div > a:hover {
 footer img {
 	height: 2em;
 }
-#footerNav {
-	position: fixed;
-    display: inline-flex;
-    flex-direction: column;
-    left: 2.7em;
-    top: 8em;
+-footer {
+	margin: 2em auto 0 auto;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	width: 82%;
+	height: 2em;
+	position: relative;
+	display: block;
+	z-index: 100;
+	color: black;
+	text-align: center;
+	bottom: 1em;
 }
 #dotNav {
 	position: fixed;
@@ -111,12 +117,6 @@ footer img {
     height: 2em;
     border-radius: 50%;
     margin-bottom: 2.5em;
-}
-#color {
-	background-image: url(../orange.jpg);
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: 85% 8em;
 }
 #pageHeader h1 {
 	font-size: 4em;
