@@ -1,8 +1,9 @@
 body {
 	color: white;
-	-webkit-justify-content: center; /* Safari */
-  	justify-content: center;
   	font-family: 'Titillium Web', sans-serif;
+  	-webkit-justify-content: center; /* Safari */
+  	justify-content: center;
+  	-webkit-align-items: center; /* Safari */
   	align-items: center;
 }
 #calculator {
@@ -15,26 +16,32 @@ body {
 	display: flex;
 	-webkit-flex-wrap: wrap; /*Safari*/
 	flex-wrap: wrap;
-	-webkit-justify-content: space-between; /* Safari */
+	-webkit-justify-content: center; /* Safari */
   	justify-content: center;
+  	-webkit-align-items: center; /* Safari */
   	align-items: center;
 }
 #screen {
 	width: 24em;
     height: 5em;
-    margin: 0.5em auto;
+    padding-right: 1em;
+	margin: 1em;
     border-radius: 10px;
 	background-color: #bdc3c7;
 	display: webkit-flex;  /*Safari*/
 	display: flex;
+	-webkit-align-items: center; /*Safari*/
 	align-items: center;
+	-webkit-justify-content: flex-end; /*Safari*/
 	justify-content: flex-end;
-	padding-right: 1em;
-	margin: 1em;
+
 }
 .pad {
+	display: -webkit-inline-flex;  /*Safari*/
 	display: inline-flex;
+	-webkit-flex-wrap: wrap; /*Safari*/
 	flex-wrap: wrap;
+	-webkit-justify-content: space-between; /* Safari */
 	justify-content: space-between;
 }
 .button {
@@ -57,7 +64,4 @@ body {
 }
 .func {
 	background-color: #9b59b6;
-}
-#clearButton, #addButton, #subtractButton, #multiplyButton, #divideButton, #equalsButton {
-
 }
