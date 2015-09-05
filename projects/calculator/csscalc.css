@@ -12,7 +12,7 @@ body {
 	background-color: #f39c12;
 	margin-top: 3em;
 	margin-left: 33%;
-	display: webkit-flex;  /*Safari*/
+	display: -webkit-flex;  /*Safari*/
 	display: flex;
 	-webkit-flex-wrap: wrap; /*Safari*/
 	flex-wrap: wrap;
@@ -22,13 +22,14 @@ body {
   	align-items: center;
 }
 #screen {
+	box-sizing: border-box;
 	width: 24em;
     height: 5em;
     padding-right: 1em;
 	margin: 1em;
     border-radius: 10px;
 	background-color: #bdc3c7;
-	display: webkit-flex;  /*Safari*/
+	display: -webkit-flex;  /*Safari*/
 	display: flex;
 	-webkit-align-items: center; /*Safari*/
 	align-items: center;
@@ -48,7 +49,7 @@ body {
 	width: 5em;
 	height: 5em;
 	border-radius: 10px;
-	display: webkit-flex;  /*Safari*/
+	display: -webkit-flex;  /*Safari*/
 	display: flex;
 	-webkit-flex-direction: row; /*Safari*/
 	flex-direction: row;
@@ -56,8 +57,10 @@ body {
 	flex-wrap: wrap;
 	-webkit-justify-content: center; /* Safari */
   	justify-content: center;
-  	margin: .4em;
+  	-webkit-align-items: center; /* Safari */
   	align-items: center;
+  	margin: .4em;
+
 }
 .num {
 	background-color: #1abc9c;
