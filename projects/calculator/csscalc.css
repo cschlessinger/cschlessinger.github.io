@@ -27,19 +27,20 @@ body {
 	background-color: #bdc3c7;
 	display: webkit-flex;  /*Safari*/
 	display: flex;
-	text-align: right;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 1em;
+	margin: 1em;
 }
-#pad {
+.pad {
 	display: inline-flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-
-.numButton {
+.button {
 	width: 5em;
 	height: 5em;
 	border-radius: 10px;
-	background-color: #1abc9c;
 	display: webkit-flex;  /*Safari*/
 	display: flex;
 	-webkit-flex-direction: row; /*Safari*/
@@ -51,19 +52,12 @@ body {
   	margin: .4em;
   	align-items: center;
 }
-.funcButton {
-	width: 5em;
-	height: 5em;
-	border-radius: 10px;
+.num {
+	background-color: #1abc9c;
+}
+.func {
 	background-color: #9b59b6;
-	display: webkit-flex;  /*Safari*/
-	display: flex;
-	-webkit-flex-direction: row; /*Safari*/
-	flex-direction: row;
-	-webkit-flex-wrap: wrap; /*Safari*/
-	flex-wrap: wrap;
-	-webkit-justify-content: center; /* Safari */
-  	justify-content: center;
-  	margin: .4em;
-  	align-items: center;
+}
+#clearButton, #addButton, #subtractButton, #multiplyButton, #divideButton, #equalsButton {
+
 }
