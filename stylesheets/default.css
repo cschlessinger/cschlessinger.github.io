@@ -1,38 +1,49 @@
 body {
 	font-family: 'Josefin Sans', sans-serif;
 }
+
 h1 {
 
 }
+
 h2 {
 
 }
+
 h3 {
 
 }
+
 p {
 	font-size: 1.1em;
 	line-height: 1.3em;
 }
+
 ul {
 
 }
+
 li {
 
 }
+
 a {
 	color: inherit;
 }
+
 header {
 	display: block;
 	text-align: center;
 }
+
 header a {
 	text-decoration: none;
 }
+
 .bkg {
 	display:inline;
 }
+
 section {
 	padding: 1em 6em;
 	margin: 3em 7em;
@@ -41,32 +52,39 @@ section {
 	overflow: auto;
 	mar
 }
+
 footer ul {
 	list-style: none;
 	display: inherit;
 	height: 1em;
 	margin-left: 9.7em;
 }
+
 footer li {
 	width: 16%;
 	display: inline;
 	float: left;
 }
+
 footer a {
 	display: inline-block;
 	text-decoration: none;
 	color: black;
 }
+
 div > a {
 	text-decoration: none;
 	color: inherit;
 }
-div > a:hover {
+
+a:hover {
 	color: white;
 }
+
 footer img {
 	height: 2em;
 }
+
 -footer {
 	margin: 2em auto 0 auto;
 	padding-top: .25em;
@@ -80,6 +98,7 @@ footer img {
 	text-align: center;
 	bottom: 1em;
 }
+
 #dotNav {
 	position: fixed;
     display: inline-flex;
@@ -87,6 +106,7 @@ footer img {
     right: 2.7em;
     top: 8em;
 }
+
 .dot {
     display: flex;
     justify-content: center;
@@ -96,6 +116,7 @@ footer img {
     border-radius: 50%;
     margin-bottom: 2.5em;
 }
+
 #dotNav a:hover::before {
 	display: flex;
 	content: attr(title);
@@ -109,6 +130,7 @@ footer img {
   	white-space: nowrap;
   	z-index: 20px;
 }
+
 .footerItem {
 	display: flex;
     justify-content: center;
@@ -118,30 +140,39 @@ footer img {
     border-radius: 50%;
     margin-bottom: 2.5em;
 }
+
 #pageHeader h1 {
 	font-size: 4em;
 }
+
 #pageHeader h2 {
 	font-size: 2em;
 }
+
 .teal {
 	background-color: #6ecdcf;
 }
+
 .pink {
 	background-color: #ebc2c2;
 }
+
 .purple {
 	background-color: #8190D5;
 }
+
 .green {
 	background-color: #85D691;
 }
+
 .orange {
 	background-color: #e8a65e;
 }
+
 .red {
 	background-color: #cb626d;
 }
+
 .project {
 	width: 33%;
 	height: 7em;
@@ -149,16 +180,19 @@ footer img {
 	position: relative;
 	padding-bottom: 2em;
 }
+
 .project img {
 	max-width: 100%;
 	max-height: 100%;
 }
+
 .blog-type {
 	text-align: center;
     padding-bottom: .8em;
     font-size: 1.2em;
     font-style: italic;
 }
+
 .row {
     padding-bottom: 2em;
     display: inline-flex;
@@ -170,6 +204,7 @@ footer img {
     -webkit-justify-content: space-between;
     justify-content: space-between;
 }
+
 .blog-post {
     height: 12em;
     width: 12em;
@@ -179,20 +214,24 @@ footer img {
     padding-top: 5em;
     box-sizing: border-box;
 }
+
 .blog-post:hover {
 	border-color: white;
 }
+
 .button-wrapper {
 	text-align: center;
 	position: relative;
 	width: 100%;
 }
+
 .button {
 	padding: 2em;
 	display: inline-block;
 	border: 2px solid black;
 	margin: 0px auto;
 }
+
 .button:hover {
 	border-color: white;
 	color: white;
