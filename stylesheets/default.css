@@ -50,7 +50,6 @@ section {
 	clear: both;
 	height:auto !important;
 	overflow: auto;
-	mar
 }
 
 footer ul {
@@ -58,6 +57,7 @@ footer ul {
 	display: inherit;
 	height: 1em;
 	margin-left: 9.7em;
+	padding-bottom: 1em;
 }
 
 footer li {
