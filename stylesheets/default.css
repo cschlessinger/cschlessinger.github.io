@@ -81,6 +81,10 @@ a:hover {
 	color: white;
 }
 
+header a:hover {
+	color: initial;
+}
+
 footer img {
 	height: 2em;
 }
